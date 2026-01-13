@@ -1,48 +1,421 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JISOO KIM Resume</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jisoo Kim - iOS / Mobile Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
-
 <body>
-  <div class="container-fluid">
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <h3>JISOO KIM</h3>
-      </div>
-      <ul class="list-unstyled components">
-        <li class="active">
-          <div data-link="about">About Me</div>
-        </li>
-        <li>
-          <div data-link="skills">Personal Skills</div>
-        </li>
-        <li>
-          <div data-link="work">Work & Experience</div>
-        </li>
-        <li>
-          <div data-link="project">Toy Project</div>
-        </li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Jisoo Kim</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#patents" class="nav-link">Patents</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-    <main>
-      <div class="title-container">
-        <button type="button" id="sidebarCollapse" class="navbar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <h3>About Me</h3>
-      </div>
-      <iframe src="https://js0224.github.io/resume/view/about.html"></iframe>
-    </main>
-  </div>
-</body>
-<script type="text/javascript" src="./js/main.js"></script>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Jisoo Kim</span>
+                </h1>
+                <h2 class="hero-subtitle">iOS / Mobile Engineer</h2>
+                <p class="hero-description">
+                    iOS engineer with 3+ years at LINE Plus, developing voice and video call features
+                    used by 200M+ monthly active users.<br>
+                    Strong background in embedded systems, bringing a performance- and
+                    reliability-first mindset to mobile products.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="JISOO_KIM_RESUME.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/jisoo-kim24" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jisoooo97@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>iOS-focused Mobile Engineer with hands-on experience in real-time communication,
+                        performance-aware systems, and large-scale consumer products.</strong>
+                    </p>
+                    <p>
+                        I build iOS applications where user experience, performance, and clear system
+                        behavior matter. Currently at LINE Plus, developing client-side features for voice 
+                        and video communication used by over 200 million monthly active users.
+                    </p>
+                    <p>
+                        What differentiates me as a mobile engineer is my background in embedded systems
+                        and my strong interest in how software interacts with hardware. Working on embedded 
+                        software for smart home appliances and autonomous system gave me practical exposure to device-level constraints 
+                        and communication between hardware and software systems.
+                    </p>
+                    <p>
+                        This perspective helps me approach iOS development with a broader system-level
+                        view, especially for features involving real-time communication, device
+                        interaction, or IoT-related workflows.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Total Experience Years</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200M+</h3>
+                        <p>Users Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Patents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- LINE Plus -->
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>iOS Software Engineer (VoIP)</h3>
+                        <h4>LINE Plus Corporation</h4>
+                        <p><em>Korea-based · Global consumer messaging platform (200M+ MAU)</em></p>
+                        <p>iOS Software Engineer working on client-side features for real-time voice and video communication on LINE.</p>
+                        
+                        <div class="contribution-category">iOS UI & Real-time Features</div>
+                        <ul>
+                            <li>Built and maintained iOS UI flows for voice and video calls, including multi-participant communication and interactive photo capture features</li>
+                            <li>Implemented system-level Picture-in-Picture using MetalKit and AVKit for seamless video rendering</li>
+                        </ul>
+                        
+                        <div class="contribution-category">Architecture & Code Quality</div>
+                        <ul>
+                            <li>Refactored client-side features using The Composable Architecture (TCA)</li>
+                            <li>Migrated pre-call device testing features to TCA with comprehensive XCTest implementation</li>
+                        </ul>
+                        
+                        <div class="contribution-category">Collaboration & Delivery</div>
+                        <ul>
+                            <li>Collaborated with product managers and designers to refine UX and ship features across multiple releases</li>
+                            <li>Improved developer workflows using GitHub Actions for automated code formatting, linting, and testing</li>
+                        </ul>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">UIKit</span>
+                            <span class="tag">SwiftUI</span>
+                            <span class="tag">TCA</span>
+                            <span class="tag">MetalKit</span>
+                            <span class="tag">AVKit</span>
+                            <span class="tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GE Appliances -->
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2021 - July 2022</div>
+                    <div class="timeline-content">
+                        <h3>Embedded Software Engineer</h3>
+                        <h4>GE Appliances (Edison Program)</h4>
+                        <p><em>Korea-based · Collaborated with U.S.-based engineering teams</em></p>
+                        <p>Embedded Software Engineer working on software for smart home appliances in a global engineering environment.</p>
+                        
+                        <div class="contribution-category">Embedded Systems</div>
+                        <ul>
+                            <li>Developed embedded software for washing machines and refrigerators using C/C++ and Lua</li>
+                            <li>Implemented device control logic interacting with sensors and hardware components</li>
+                            <li>Redesigned rotation control business logic achieving 3x faster tower rotation speed</li>
+                        </ul>
+                        
+                        <div class="contribution-category">Engineering Practices</div>
+                        <ul>
+                            <li>Applied test-driven development (TDD) with unit and integration tests</li>
+                            <li>Participated in agile development using Zenhub and Confluence</li>
+                            <li>Conducted code reviews using GitHub and cross-functional collaboration with U.S.-based teams</li>
+                        </ul>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Lua</span>
+                            <span class="tag">Embedded Systems</span>
+                            <span class="tag">TDD</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Zenhub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wayties -->
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2020 - March 2021</div>
+                    <div class="timeline-content">
+                        <h3>Embedded Software Engineer</h3>
+                        <h4>Wayties Inc.</h4>
+                        <p><em>Korea-based · V2X communication systems</em></p>
+                        <p>Embedded Software Engineer working on communication software for vehicle-to-vehicle (V2X) systems.</p>
+                        
+                        <div class="contribution-category">Communication Systems</div>
+                        <ul>
+                            <li>Developed encoding and decoding modules for V2X communication using C++11 and ASN.1, supporting IEEE 1609.x and SAE J2735 message standards</li>
+                            <li>Implemented and tested message parsing logic for real-time data exchange</li>
+                            <li>Led development of traffic signal simulator with Node.js and C++ ROS2 parsers</li>
+                        </ul>
+                        
+                        <div class="contribution-category">Engineering Practices</div>
+                        <ul>
+                            <li>Wrote automated tests using Google Test and participated in code reviews within an agile development environment</li>
+                        </ul>
+                        
+                        <div class="tech-tags">
+                            <span class="tag">C++11</span>
+                            <span class="tag">ASN.1</span>
+                            <span class="tag">V2X</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">ROS2</span>
+                            <span class="tag">Google Test</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+    <section id="patents" class="patents">
+        <div class="container">
+            <h2 class="section-title">Patents</h2>
+            <div class="patents-grid">
+                <!-- Patent 1 -->
+                <div class="patent-card">
+                    <div class="patent-header">
+                        <h3>Method and System for Image Capturing During Video Call</h3>
+                        <span class="patent-status">Published</span>
+                    </div>
+                    <div class="patent-details">
+                        <p class="patent-number">PCT/KR2024/011967 (WO 2025/084575)</p>
+                        <p class="patent-date">Published: April 2025</p>
+                        <p class="patent-description">
+                            Innovative system for capturing and processing high-quality images during ongoing video calls 
+                            without interrupting the communication flow.
+                        </p>
+                        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2025084575" target="_blank" class="patent-link">
+                            <i class="fas fa-external-link-alt"></i> View Patent
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Patent 2 -->
+                <div class="patent-card">
+                    <div class="patent-header">
+                        <h3>Washing Machine Appliances with Humidity Measurement</h3>
+                        <span class="patent-status granted">Granted</span>
+                    </div>
+                    <div class="patent-details">
+                        <p class="patent-number">US Patent 12,221,737 B2</p>
+                        <p class="patent-date">Granted: February 2025</p>
+                        <p class="patent-description">
+                            Advanced humidity sensing system for optimizing washing cycles and improving 
+                            fabric care in smart washing machines.
+                        </p>
+                        <a href="https://patents.google.com/patent/US12221737B2/en" target="_blank" class="patent-link">
+                            <i class="fas fa-external-link-alt"></i> View Patent
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Patent 3 -->
+                <div class="patent-card">
+                    <div class="patent-header">
+                        <h3>Adaptive Scent Dispensing for Dryer Appliance</h3>
+                        <span class="patent-status">Filed</span>
+                    </div>
+                    <div class="patent-details">
+                        <p class="patent-number">US Patent App. 2024/0125041 A1</p>
+                        <p class="patent-date">Filed: April 2024</p>
+                        <p class="patent-description">
+                            Smart scent dispensing technology that adapts fragrance release based on 
+                            fabric type and drying conditions.
+                        </p>
+                        <a href="https://patents.google.com/patent/US20240125041A1/en" target="_blank" class="patent-link">
+                            <i class="fas fa-external-link-alt"></i> View Patent
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="projects-grid">
+                <!-- MAAL Daliza -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MAAL Daliza</h3>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>Horse racing decision support system using Korea Racing Authority API. Led 3-person team to develop betting recommendations.</p>
+                    <ul>
+                        <li>Built data pipeline with Python (pandas, NumPy) and backtesting framework with pytest</li>
+                        <li>Automated data collection and backtesting with Python scripts and cron jobs</li>
+                        <li>Created web application using Node.js for real-time race day recommendations</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Factory Kim -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Factory Kim</h3>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-google-play"></i></a>
+                        </div>
+                    </div>
+                    <p>Android application for creating personalized digital coupons with custom designs and themes.</p>
+                    <ul>
+                        <li>Led project planning, specification definition, and architecture design</li>
+                        <li>Published on Google Play Store using Kotlin 1.6.10 and Android Studio, targeting Android SDK 31</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">Android SDK 31</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> iOS Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Swift</span>
+                        <span class="skill-item">SwiftUI</span>
+                        <span class="skill-item">UIKit</span>
+                        <span class="skill-item">TCA</span>
+                        <span class="skill-item">Combine</span>
+                        <span class="skill-item">MetalKit</span>
+                        <span class="skill-item">AVKit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Swift</span>
+                        <span class="skill-item">C/C++</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Xcode</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Jira</span>
+                        <span class="skill-item">Confluence</span>
+                        <span class="skill-item">Zenhub</span>
+                        <span class="skill-item">CI/CD</span>
+                        <span class="skill-item">GitHub Actions</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Domain Knowledge</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">VoIP Systems</span>
+                        <span class="skill-item">Embedded Systems</span>
+                        <span class="skill-item">V2X Communication</span>
+                        <span class="skill-item">TDD</span>
+                        <span class="skill-item">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in hearing about new opportunities and exciting projects.</p>
+                <div class="contact-info">
+                    <a href="mailto:jisoooo97@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jisoooo97@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/jisoo-kim24" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/jisoo-kim24</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jisoo Kim. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
