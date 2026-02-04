@@ -426,7 +426,7 @@ section {
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 1rem;
 }
 
@@ -437,6 +437,13 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+}
+
+.project-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+    white-space: nowrap;
 }
 
 .project-links a {
